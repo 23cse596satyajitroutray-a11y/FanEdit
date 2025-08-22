@@ -149,17 +149,57 @@ Open to freelance opportunities, collaborations, and long-term partnerships. Let
 
   <!-- Thumbnails -->
   <div class="thumbnail-section">
-    <h4>Thumbnail Designs</h4>
-    <div class="thumbnail-gallery">
-      <img src="assets/images/Picsart_25-08-02_17-34-23-570.jpg" alt="Thumbnail 1">
-      <img src="assets/images/DV3360.jpg" alt="Thumbnail 2">
-      <img src="assets/images/Picsart_25-08-04_17-26-23-546.jpg" alt="Thumbnail 3">
-    </div>
-    <br />
-    <a href="https://drive.google.com/drive/folders/1WwSp2-Ye7ZVtlTVKXXCNtK5ngDa5BVFd" target="_blank">
-      <button class="contact-btn">View More Thumbnails on Drive</button>
-    </a>
+  <h4>Thumbnail Designs</h4>
+  <div class="thumbnail-gallery-grid">
+   <img src="assets/images/DV3360.jpg" alt="Thumbnail 1">
+    <img src="assets/images/Jio.jpg" alt="Thumbnail 2">
+    <img src="assets/images/Kalkee mam THUMBNAIL-1.jpg" alt="Thumbnail 3">
+    <img src="assets/images/Godi.jpg" alt="Thumbnail 4">
+    <img src="assets/images/E-learning.jpg" alt="Thumbnail 5">
+    <img src="assets/images/Smriti mam THUMBNAIL.jpg" alt="Thumbnail 6">
   </div>
+  <br />
+  <a href="https://drive.google.com/drive/folders/1WwSp2-Ye7ZVtlTVKXXCNtK5ngDa5BVFd" target="_blank">
+    <button class="contact-btn">View More Thumbnails on Drive</button>
+  </a>
+</div>
+
+<style>
+.thumbnail-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 columns without stretching */
+  gap: 10px;                              /* small gap between rows & columns */
+  overflow-y: auto;                       /* Vertical scrolling */
+  scroll-behavior: smooth;
+  max-height: 260px;                      /* Only one row (2 images) visible */
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Image styling */
+.thumbnail-gallery-grid img {
+  width: 80%;          /* Fill available column */
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.thumbnail-gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Scrollbar styling (optional) */
+.thumbnail-gallery-grid::-webkit-scrollbar {
+  width: 6px;
+}
+.thumbnail-gallery-grid::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+</style>
+
 
   <!-- Videos -->
   <div class="video-edit-section">
@@ -219,6 +259,7 @@ Open to freelance opportunities, collaborations, and long-term partnerships. Let
     </section>
   </body>
 </html>
+
 
 
 
